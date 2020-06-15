@@ -28,3 +28,17 @@ BibTeX entry
     year = {2020}
 }
 ```
+
+If you use this work in the context of EP and ERP analysis, please additionally cite
+
+> D. Thinnes, P. Flotho, F. I. Corona-Strauss, D. J. Strauss and J. F. Vibell, “Compensation of P300 Latency Jitter using fast variational 1D Displacement Estimation” (in preparation), 2020. 
+
+BibTeX entry
+```
+@article{thinn20,
+    author = {Thinnes, D. and Flotho, P. and Corona-Strauss, F. I. and Strauss, D. J. and Vibell, J. F.},
+    title = {Compensation of P300 Latency Jitter using fast variational 1D Displacement Estimation},
+    journal = {(in preparation)},
+    year = {2020}
+}
+```
