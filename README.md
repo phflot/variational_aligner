@@ -11,7 +11,7 @@ $ git clone https://github.com/phflot/variational_aligner.git
 
 ## Documentation and Usage
 
-The Code can be compiled with the ```make.m``` file which takes any mex argument as input. 
+The Code can be compiled and installed with the ```set_path.m``` file. The file ```examples/align_noise.m``` reproduces the alignment of random data from our paper and can be referred to for the usage of the alignment functions. 
 
 ## Citation
 If you use this code for your work, please cite
