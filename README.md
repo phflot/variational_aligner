@@ -16,13 +16,13 @@ The Code can be compiled and installed with the ```set_path.m``` file. The file 
 ## Citation
 If you use this code for your work, please cite
   
-> P. Flotho, D. Thinnes, B. Kuhn, C. J. Roome, J. F. Vibell and D. J. Strauss, “Fast Variational Alignment of non-flat 1D Displacements with Applications in Neuroimaging” (bioRxiv), 2020. 
+> P. Flotho, D. Thinnes, B. Kuhn, C. J. Roome, J. F. Vibell and D. J. Strauss, “Fast Variational Alignment of non-flat 1D Displacements for Applications in Neuroimaging” (bioRxiv), 2020. 
 
 BibTeX entry
 ```
 @article{floth20,
     author = {Flotho, P. and Thinnes, D. and Kuhn, B. and Roome, C. J. and Vibell, J. F. and Strauss, D. J.},
-    title = {Fast Variational Alignment of non-flat 1D Displacements with Applications in Neuroimaging},
+    title = {Fast Variational Alignment of non-flat 1D Displacements for Applications in Neuroimaging},
     journal = {bioRxiv},
     year = {2020}
 }
