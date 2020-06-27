@@ -1,8 +1,6 @@
 function [Reg,V] = Var_Alignment(inputImage,method,iter_ref,Fs)
-
 % author: David Thinnes
-% date:  06/17/2020
-
+% date:  06/27/2020
 
 % description:
 % the function corrects the latency shift of evoked potentials by choosing a stable
@@ -11,7 +9,6 @@ function [Reg,V] = Var_Alignment(inputImage,method,iter_ref,Fs)
 % it performs 1 dimensional alignment according to the selected reference
 % method: cross correlation, mean of all image rows 
 % default: 'Mean'
-
 
 % input: 
 %===============================================================================================
@@ -28,12 +25,11 @@ function [Reg,V] = Var_Alignment(inputImage,method,iter_ref,Fs)
 % please refere to:
 %===============================================================================================
 % variational_aligner Philipp Flotho, 2020
-% Philipp Flotho David Thinnes, F. I. Corona Strauss, J. F. Vibell  & D.J. Strauss    Fast Variational Method for the Estimation and Quantization of non–flat Displacements in 1D Signals with Applications in Neuroimaging 2020
-% David Thinnes Phillip Flotho, F. I. Corona Strauss, D. J. Strauss  & J. F. Vibell   Compensation of P300 Latency Jitter using fast variational 1D Displacement Estimation
+% Philipp Flotho David Thinnes, F. I. Corona Strauss, J. F. Vibell  & D.J. Strauss    Fast Variational Method for the Estimation and Quantization of non–flat Displacements in 1D Signals with Applications in Neuroimaging, 2020
+% David Thinnes Phillip Flotho, F. I. Corona Strauss, D. J. Strauss  & J.F. Vibell   Compensation of P300 Latency Jitter using fast variational 1D Displacement Estimation, 2020
 
 %% define image size and change to crayscale image
 
-inputImage = inputImage(40:end,:);
  % size of inputImage
  L1 = size(inputImage,1);
  L2 = size(inputImage,2);
@@ -57,8 +53,7 @@ switch method
 
     case 'Mean' , case 'mean'
         ref = mean(inputImage);
- 
-        
+      
     otherwise
         % default
         ref = mean(inputImage);
@@ -111,8 +106,6 @@ G = G ./ sum(G(:));
     reg_filt = ...
     mat2gray(imfilter(reg, G, 'symmetric'));
 
-    
-
     % iterative application possible
     for tt = 1:iter_ref
     
@@ -143,7 +136,6 @@ G = G ./ sum(G(:));
     Reg = registered;
     V = v;
   
-    
     %% Plot the results
     
     ROI1 = 350;

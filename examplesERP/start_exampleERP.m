@@ -1,6 +1,7 @@
-% Author   : David Thinnes
+% author: David Thinnes
+% date:  06/27/2020
 %% open path
-addpath(fullfile(pwd, 'functions'));
+addpath(fullfile(pwd, 'functionsERP'));
 load('exampleERP');
 
 close all
