@@ -162,7 +162,7 @@ void mexFunction(int nlhs, mxArray* plhs[],
 					nd_idx = j + i * ny + k * (nx * ny);
 					ref_idx = j + k * ny;
 
-					num_v -= weight[nd_idx] * psi[nd_idx] * (fy[nd_idx] * fyy[nd_idx] - f_ref_y[ref_idx] * fyy[nd_idx]);
+					num_v -= weight[nd_idx] * psi[nd_idx] * (fy[nd_idx] * fyy[nd_idx] - f_ref_y[nd_idx] * fyy[nd_idx]);
 
 					denom_v += weight[nd_idx] * psi[nd_idx] * fyy[nd_idx] * fyy[nd_idx];
 				}
