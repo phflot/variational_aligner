@@ -35,22 +35,25 @@ Example code for the usage of the variational aligner in the context of Event Re
 
 If you use this code for your work, please cite
   
-> P. Flotho, D. Thinnes, J. F. Vibell and D. J. Strauss, â€œFast Variational Method for the Estimation and Quantization of non-flat Displacements in 1D Signals with Applications in Neuroimagingâ€? (in preparation), 2020. 
+> P. Flotho, D. Thinnes, J. F. Vibell and D. J. Strauss, Fast Variational Method for the Estimation and Quantization of non-flat Displacements in 1D Signals with Applications in Neuroimaging? (in preparation), 2020. 
 
 BibTeX entry
 ```
 @article{floth20,
-    author = {Flotho, P. and Thinnes, D. and Vibell, J. F. and Strauss, D. J.},
-    title = {Fast Variational Method for the Estimation and Quantization 
-             of non-flat Displacements in 1D Signals with Applications in Neuroimaging},
-    journal = {(in preparation)},
-    year = {2020}
+    author = {Flotho, P. and Thinnes, D. and Kuhn, B. and Roome, C. J. and Vibell, J. F. and Strauss, D. J.},
+    title = {Fast Variational Alignment of non-flat 1D Displacements for Applications in Neuroimaging},
+	elocation-id = {2020.06.27.151522},
+	year = {2020},
+	doi = {10.1101/2020.06.27.151522},
+	publisher = {Cold Spring Harbor Laboratory},
+	URL = {https://www.biorxiv.org/content/early/2020/06/29/2020.06.27.151522},
+	eprint = {https://www.biorxiv.org/content/early/2020/06/29/2020.06.27.151522.full.pdf},
+	journal = {bioRxiv}
 }
 ```
-
 If you use this work in the context of EP and ERP analysis, please additionally cite
 
-> D. Thinnes, P. Flotho, F. I. Corona-Strauss, D. J. Strauss and J. F. Vibell, â€œCompensation of P300 Latency Jitter using fast variational 1D Displacement Estimationâ€? (in preparation), 2020. 
+> D. Thinnes, P. Flotho, F. I. Corona-Strauss, D. J. Strauss and J. F. Vibell, Compensation of P300 Latency Jitter using fast variational 1D Displacement Estimation? (in preparation), 2020. 
 
 BibTeX entry
 ```
