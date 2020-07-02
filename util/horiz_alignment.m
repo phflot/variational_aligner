@@ -1,5 +1,6 @@
 % Date     : 17.07.2019
 % Author   : Philipp Flotho
+% Copyright 2020 by Philipp Flotho, All rights reserved.
 
 function [ registered ] = horiz_alignment( f2, v )
 

@@ -1,4 +1,5 @@
 % Author   : Philipp Flotho
+% Copyright 2020 by Philipp Flotho, All rights reserved.
 
 run('../set_path');
 
