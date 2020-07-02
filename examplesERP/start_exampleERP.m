@@ -1,5 +1,6 @@
-% author: David Thinnes
+% Author: David Thinnes
 % date:  07/02/2020
+% Copyright 2020 by David Thinnes, All rights reserved.
 
 %% set path
 run('set_path_functionsERP');

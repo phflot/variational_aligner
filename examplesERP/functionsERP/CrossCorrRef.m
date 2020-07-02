@@ -1,6 +1,7 @@
 function [ ref ] = CrossCorrRef(inputImage,ReferenceLine)
-% author: David Thinnes
+% Author: David Thinnes
 % date:  06/27/2020
+% Copyright 2020 by David Thinnes, All rights reserved.
 
 % input: inputImage = the image you want to align
 %        ReferenceLine = the line the cross correlation is performed to
@@ -30,16 +31,12 @@ lagall(ii,:) = lag;
 Mall(ii) = M;
 Iall(ii) = I;
 
-
 timeshift(ii) = lag(I) ;
 clear C lag M I
  end
 
  
  %% find most dominant timeshift in the timelag data
-
-% MO = mode(timeshift);
-% ref = find(timeshift == MO);
 ref = [];
  
 for kk = 1:size(timeshift,2)

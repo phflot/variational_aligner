@@ -1,6 +1,7 @@
 function [Reg,V] = Var_Alignment(inputImage,method,iter_ref,Fs)
-% author: David Thinnes
+% Author: David Thinnes
 % date:  07/02/2020
+% Copyright 2020 by David Thinnes, All rights reserved.
 
 % description:
 % the function corrects the latency shift of evoked potentials by choosing a stable
@@ -26,10 +27,10 @@ function [Reg,V] = Var_Alignment(inputImage,method,iter_ref,Fs)
 %===============================================================================================
 % variational_aligner Philipp Flotho, 2020
 % Philipp Flotho David Thinnes, F. I. Corona Strauss, J. F. Vibell  & D.J. Strauss    Fast Variational Method for the Estimation and Quantization of non–flat Displacements in 1D Signals with Applications in Neuroimaging, 2020
-% David Thinnes Phillip Flotho, F. I. Corona Strauss, D. J. Strauss  & J.F. Vibell   Compensation of P300 Latency Jitter using fast variational 1D Displacement Estimation, 2020
+% David Thinnes Philipp Flotho, F. I. Corona Strauss, D. J. Strauss  & J.F. Vibell   Compensation of P300 Latency Jitter using fast variational 1D Displacement Estimation, 2020
 
 
-%% define image size and change to crayscale image
+%% define image size
 
  % size of inputImage
  L1 = size(inputImage,1);
@@ -60,7 +61,6 @@ switch method
 end
 
 %% define parameters for the alignment program
-
 s_i = 10;
 it_i = 60;
 a_i = 0.6;
@@ -71,18 +71,11 @@ it_r = 20;
 a_r = 0.6;
 as_r = 0.5;
 
-% Estimate the noise of the input Image
-Sigma = estimate_noise(mat2gray(inputImage));
-
-% first prefilter with BM3D denoising filter
-[~, prefiltered] = BM3D(1, mat2gray(inputImage), Sigma, 0);
-prefiltered = mat2gray(prefiltered);
-
 %% 1 dimensional displacement estimation, Philipp Flotho 2020
 
 % initial alignment to get the reference (select stable reference measurements):
 [~, v] = align_lines(...
-    prefiltered, ...
+    inputImage, ...
     mat2gray(ref), ...
     'sigma',s_i, ...
     'iterations', it_i, ...                         % about 20-150
@@ -98,7 +91,7 @@ for tt = 1:iter_ref
     
     % refinement:
     [~, v] = align_lines(...
-        prefiltered, ...
+        inputImage, ...
         mat2gray(mean(reg_filt, 1)), ...
         'v', v, ...
         'sigma', s_r, ...
@@ -153,9 +146,9 @@ subplot(2,2,3);
 patch(x,y, [0.85 0.85 0.85]);
 hold on;
 title('Average of all trials','FontSize', 15);
-plot(time,mean(inputImage),'LineWidth', 2);                                % Set Zeros To ‘NaN’
+plot(time,mean(inputImage),'LineWidth', 2); 
 mean_tmp = mean(tmp, 1, 'omitnan');
-plot(time,mean_tmp,'LineWidth', 2)
+plot(time,mean_tmp,'LineWidth', 2);
 legend('ROI','Pre-Alignment','Post-Alignment','Location','NW');
 xlim([time(1) time(end)]);
 xlabel('time [ms]','FontSize', 15)

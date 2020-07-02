@@ -4,16 +4,16 @@
 
 
 Example code for the usage of the variational aligner in the context of Event Related Potential.
+To perfom the example code run:  start_exampleERP
 
  author: David Thinnes
  date:  06/27/2020
+
  function name: [Reg,V] = Var_Alignment(inputImage,method,iter_ref,Fs)
 
  description:
  the function corrects the latency shift of evoked potentials by choosing a stable
- reference and realigning the 2D Sweep Image of the data.
-
- it performs 1 dimensional alignment according to the selected reference.
+ reference and realigning the 2D Sweep Image of the data. It performs 1 dimensional alignment according to the selected reference.
  method: cross correlation, mean of all image rows 
  default: 'Mean'
 
@@ -69,29 +69,3 @@ BibTeX entry
 
 The example ERP is a shifted version of the example ERP c1+c2+c3 from the ERP toolbox artificial data for filtering
 see: https://erpinfo.org/artificial-data-for-filtering  ==> fake_data.erp
-
-## The functions BM3D and estimate_noise come from:
-
-
--------------------------------------------------------------------
-
-  BM3D demo software for image/video restoration and enhancement  
-                   Public release v1.9 (26 August 2011) 
-
--------------------------------------------------------------------
-
-Copyright (c) 2006-2011 Tampere University of Technology. 
-All rights reserved.
-This work should be used for nonprofit purposes only.
-
-Authors:                     Kostadin Dabov
-                             Aram Danieyan
-                             Alessandro Foi
-
-
-BM3D web page:               http://www.cs.tut.fi/~foi/GCF-BM3D
-
-
-K. Dabov, A. Foi, V. Katkovnik, and K. Egiazarian, "Image 
-denoising by sparse 3D transform-domain collaborative filtering," 
-IEEE Trans. Image Process., vol. 16, no. 8, August 2007.
