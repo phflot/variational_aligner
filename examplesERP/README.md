@@ -35,7 +35,7 @@ Example code for the usage of the variational aligner in the context of Event Re
 
 If you use this code for your work, please cite
   
-> P. Flotho, D. Thinnes, J. F. Vibell and D. J. Strauss, Fast Variational Method for the Estimation and Quantization of non-flat Displacements in 1D Signals with Applications in Neuroimaging? (in preparation), 2020. 
+> P. Flotho, D. Thinnes, J. F. Vibell and D. J. Strauss, Fast Variational Method for the Estimation and Quantization of non-flat Displacements in 1D Signals with Applications in Neuroimaging (in preparation), 2020. 
 
 BibTeX entry
 ```
@@ -53,7 +53,7 @@ BibTeX entry
 ```
 If you use this work in the context of EP and ERP analysis, please additionally cite
 
-> D. Thinnes, P. Flotho, F. I. Corona-Strauss, D. J. Strauss and J. F. Vibell, Compensation of P300 Latency Jitter using fast variational 1D Displacement Estimation? (in preparation), 2020. 
+> D. Thinnes, P. Flotho, F. I. Corona-Strauss, D. J. Strauss and J. F. Vibell, Compensation of P300 Latency Jitter using fast variational 1D Displacement Estimation (in preparation), 2020. 
 
 BibTeX entry
 ```
