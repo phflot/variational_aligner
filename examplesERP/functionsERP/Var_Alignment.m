@@ -152,7 +152,6 @@ plot(time,mean_tmp,'LineWidth', 2);
 legend('ROI','Pre-Alignment','Post-Alignment','Location','NW');
 xlim([time(1) time(end)]);
 xlabel('time [ms]','FontSize', 15)
-ylabel('voltage [\muV]','FontSize', 15)
 grid on;
 hold off;
 
