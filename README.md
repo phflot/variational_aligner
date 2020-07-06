@@ -1,6 +1,6 @@
 # Toolbox for fast, variational 1D alignment
 
-The code is written in Matlab and C++
+The code is written in Matlab and C++. The preprint of our paper can be found on [bioRxiv](https://www.biorxiv.org/content/10.1101/2020.06.27.151522v1) and the project website [here](https://phflot.github.io/variational_aligner/).
 
 ## Download
 
@@ -11,7 +11,7 @@ $ git clone https://github.com/phflot/variational_aligner.git
 
 ## ImageJ and Fiji Plugin
 
-Our method for the alignment of linescans is also available as a plugin for ImageJ and Fiji [here](https://github.com/phflot/variational_aligner_IJ).
+An ImageJ and Fiji plugin for the alignment of linescans is currently under development and will be available [here](https://github.com/phflot/variational_aligner_IJ).
 
 ## Documentation and Usage
 
@@ -20,7 +20,7 @@ The Code can be compiled and installed with the ```set_path.m``` file. The file 
 ## Citation
 If you use this code for your work, please cite
   
-> P. Flotho, D. Thinnes, B. Kuhn, C. J. Roome, J. F. Vibell and D. J. Strauss, “Fast Variational Alignment of non-flat 1D Displacements for Applications in Neuroimaging” (bioRxiv), 2020. 
+> P. Flotho, D. Thinnes, B. Kuhn, C. J. Roome, J. F. Vibell and D. J. Strauss, “Fast Variational Alignment of non-flat 1D Displacements for Applications in Neuroimaging” [bioRxiv](https://www.biorxiv.org/content/10.1101/2020.06.27.151522v1), 2020. 
 
 BibTeX entry
 ```
