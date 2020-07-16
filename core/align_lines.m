@@ -67,8 +67,8 @@ function [reg, v] = align_lines( f1, f_ref, varargin )
     end
         
     if smoothing
-        f1_low = imgaussfilt3(f1, [sigma, 0.00001, 0.00001], 'Padding', 'symmetric');
-        f_ref_low = imgaussfilt3(f_ref, [sigma, 0.00001, 0.00001], 'Padding', 'symmetric');
+        f1_low = imgaussfilt2(f1, [sigma, 0]);
+        f_ref_low = imgaussfilt2(f_ref, [sigma, 0]);
     else
         f1_low = f1;
         f_ref_low = f_ref;
