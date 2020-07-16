@@ -15,7 +15,7 @@ An ImageJ and Fiji plugin for the alignment of linescans is currently under deve
 
 ## Documentation and Usage
 
-The Code can be compiled and installed with the ```set_path.m``` file. The file ```examples/align_noise.m``` reproduces the alignment of random data from our paper and can be referred to for the usage of the alignment functions. 
+The Code can be compiled and installed with the ```set_path.m``` file. The file ```examples/align_noise.m``` reproduces the alignment of random data from our paper and can be referred to for the usage of the alignment functions. The script ```examples/linescan_example.m``` demonstrates the alignment of 2D multichannel linescan data. 
 
 ## Citation
 If you use this code for your work, please cite
