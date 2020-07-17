@@ -10,7 +10,7 @@ clc
 rng(16583);
 
 inputImage = rand(199, 802);
-inputImage = imgaussfilt3(inputImage, [0.001, 5, 0.001]);
+inputImage = imgaussfilt2(inputImage, [0, 5]);
 
 reference = mat2gray(sin(0.1 * (1:802)));
 
