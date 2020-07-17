@@ -54,6 +54,8 @@ function [img, v_ref, reference] = generate_synth_ERP(rng_idx, v_ref)
         X(:) + v_ref(:), ...
         Y(:) + zeros(m * n, 1), img(:));
     img = F(X, Y);
-    img = img + normrnd(0, 0.5, n_trials, width);
+    img = img + ...
+        imgaussfilt2(normrnd(0, 2, n_trials, width), [0, 2]) + ...
+        normrnd(0, 0.5, n_trials, width);
 end
 
