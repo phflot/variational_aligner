@@ -1,7 +1,7 @@
 % Date     : 17.07.2020
 % Author   : Philipp Flotho
 
-function [img, v_ref, reference] = generate_synth_ERP(rng_idx, v_ref)
+function [img, v_ref, reference, groundTruthMap] = generate_synth_ERP(rng_idx, v_ref)
     run('../set_path.m');
 
     load('ERPexample.mat', 'ERPexample');
@@ -41,8 +41,8 @@ function [img, v_ref, reference] = generate_synth_ERP(rng_idx, v_ref)
         
         % local displacements
         for i = 1:n_trials
-            v_ref(i, idx(1)-10:idx(1)+ 10) = v_ref(i, 1) + normrnd(0, 2);
-            v_ref(i, idx(2)-15:idx(2)+ 15) = v_ref(i, 1) + normrnd(0, 8);
+            v_ref(i, idx(1)-10:idx(1)+ 10) = v_ref(i, 1) + normrnd(0, 0.5);
+            v_ref(i, idx(2)-15:idx(2)+ 15) = v_ref(i, 1) + normrnd(0, 2);
         end
         v_ref = imgaussfilt2(v_ref, [0, 5]);
     end
@@ -53,8 +53,8 @@ function [img, v_ref, reference] = generate_synth_ERP(rng_idx, v_ref)
     F = scatteredInterpolant(...
         X(:) + v_ref(:), ...
         Y(:) + zeros(m * n, 1), img(:));
-    img = F(X, Y);
-    img = img + ...
+    groundTruthMap = F(X, Y);
+    img = groundTruthMap + ...
         imgaussfilt2(normrnd(0, 2, n_trials, width), [0, 2]) + ...
         normrnd(0, 0.5, n_trials, width);
 end
