@@ -11,7 +11,7 @@ $ git clone https://github.com/phflot/variational_aligner.git
 
 ## ImageJ and Fiji Plugin
 
-An ImageJ and Fiji plugin for the alignment of linescans is currently under development and will be available [here](https://github.com/phflot/variational_aligner_IJ).
+An ImageJ and Fiji plugin for the alignment of linescans is available [here](https://github.com/phflot/variational_aligner_IJ).
 
 ## Documentation and Usage
 
